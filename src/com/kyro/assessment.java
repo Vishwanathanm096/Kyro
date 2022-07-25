@@ -29,7 +29,6 @@ public class assessment {
 		driver.findElement(By.id("username")).sendKeys("viswanathanm12@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("Vishwa!1234!");
 		driver.findElement(By.xpath("//button[text()='Continue']")).click();
-		//driver.findElement(By.name("action")).click();
 		Thread.sleep(2000);
 		
 		//Navigate to DashBoard and select one of the existing project
