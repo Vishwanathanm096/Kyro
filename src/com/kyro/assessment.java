@@ -35,7 +35,7 @@ public class assessment {
 		
 		driver.findElement(By.xpath("//span[text()='Dashboard']")).click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//div[normalize-space()='Kyro Version 1.0']")).click();
+		driver.findElement(By.xpath("//div[normalize-space()='Kyro Version 4.0']")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("button[texttransform ='none']")).click();
 		
@@ -54,11 +54,11 @@ public class assessment {
 		driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		Thread.sleep(2000);
 		
-	   //Validate the new task created in the list view by screenshot 
+	        //Validate the new task created in the list view by screenshot 
 		
-	    File f1=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	    File f2 =new File("./screenshot/Projectpagedetails.jpg");
-	    FileHandler.copy(f1, f2);
+	        File f1=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	        File f2 =new File("./screenshot/Projectpagedetails.jpg");
+	        FileHandler.copy(f1, f2);
 		driver.quit();
 	}
 
